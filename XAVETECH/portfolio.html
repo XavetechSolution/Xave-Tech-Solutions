@@ -1,135 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — XAVE TECH</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class="theme-light">
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="XAVE TECH logo" id="site-logo-small"></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — XAVE TECH</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="theme-light">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"
+          ><img src="assets/logo.jpg" alt="XAVE TECH logo" id="site-logo-small"
+        /></a>
 
-      <nav class="main-nav" aria-label="Main navigation" id="mainNav">
-        <button id="hamburger2" class="hamburger" aria-expanded="false" aria-controls="navList2">
-          <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-        </button>
-        <ul id="navList2" class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="portfolio.html" class="nav-link is-current">Portfolio</a></li>
-          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+        <nav class="main-nav" aria-label="Main navigation" id="mainNav">
+          <button
+            id="hamburger2"
+            class="hamburger"
+            aria-expanded="false"
+            aria-controls="navList2"
+          >
+            <span class="hamburger-box"
+              ><span class="hamburger-inner"></span
+            ></span>
+          </button>
+          <ul id="navList2" class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="portfolio.html" class="nav-link is-current">Portfolio</a>
+            </li>
+            <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
 
-      <div class="controls">
-       <button id="themeToggle2" aria-pressed="false" class="theme-toggle" title="Toggle theme">
-         <svg class="toggle-icon sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
-         <svg class="toggle-icon moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.3A8.3 8.3 0 1 1 11.7 3 6.8 6.8 0 0 0 21 12.3z" fill="currentColor"/></svg>
-         <span class="socket"></span>
-       </button>
+        <div class="controls">
+          <button
+            id="themeToggle2"
+            aria-pressed="false"
+            class="theme-toggle"
+            title="Toggle theme"
+          >
+            <svg class="toggle-icon sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+            </svg>
+            <svg
+              class="toggle-icon moon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 12.3A8.3 8.3 0 1 1 11.7 3 6.8 6.8 0 0 0 21 12.3z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="socket"></span>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="wrap">
-    <h1>Our Work</h1>
-    <p class="lead">A curated selection across services. Click a category to filter.</p>
+    <main class="wrap">
+      <h1>Our Work</h1>
+      <p class="lead">
+        A curated selection across services. Click a category to filter.
+      </p>
 
-    <div class="portfolio-controls">
-      <button data-filter="all" class="active">All</button>
-      <button data-filter="web">Website Creation</button>
-      <button data-filter="graphics">Graphic Design</button>
-      <button data-filter="social">Social Media Management</button>
-    </div>
+      <div class="portfolio-controls">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="web">Website Creation</button>
+        <button data-filter="graphics">Graphic Design</button>
+        <button data-filter="social">Social Media Management</button>
+      </div>
 
-    <section id="portfolioGrid" class="portfolio-grid" aria-live="polite">
-   
-      <article class="portfolio-item" data-category="web">
-        <img src="assets/portfolio/PHOTO-2.jpg" alt="Responsive website for client A">
-        <div class="portfolio-meta">
-          <h3>Responsive E-Commerce</h3>
-          <p>Fast checkout, PWA-ready, conversion-optimized.</p>
-        </div>
-      </article>
+      <section id="portfolioGrid" class="portfolio-grid" aria-live="polite">
+        <article class="portfolio-item" data-category="web">
+          <img
+            src="assets/portfolio/PHOTO-2.jpg"
+            alt="Responsive website for client A"
+          />
+          <div class="portfolio-meta">
+            <h3>Responsive E-Commerce</h3>
+            <p>Fast checkout, PWA-ready, conversion-optimized.</p>
+          </div>
+        </article>
 
-      <article class="portfolio-item" data-category="graphics">
-        <img src="assets/portfolio/PHOTO-4.jpg" alt="Brand identity sample">
-        <div class="portfolio-meta">
-          <h3>Brand Identity</h3>
-          <p>Logo, stationery and brand guidelines.</p>
-        </div>
-      </article>
+        <article class="portfolio-item" data-category="graphics">
+          <img src="assets/portfolio/PHOTO-4.jpg" alt="Brand identity sample" />
+          <div class="portfolio-meta">
+            <h3>Brand Identity</h3>
+            <p>Logo, stationery and brand guidelines.</p>
+          </div>
+        </article>
 
-      <article class="portfolio-item" data-category="social">
-        <img src="assets/portfolio/PHOTO-6.jpg" alt="Social campaign sample">
-        <div class="portfolio-meta">
-          <h3>Paid Social Campaign</h3>
-          <p>Creative and analytics-driven campaign.</p>
-        </div>
-      </article>
+        <article class="portfolio-item" data-category="social">
+          <img
+            src="assets/portfolio/PHOTO-6.jpg"
+            alt="Social campaign sample"
+          />
+          <div class="portfolio-meta">
+            <h3>Paid Social Campaign</h3>
+            <p>Creative and analytics-driven campaign.</p>
+          </div>
+        </article>
+      </section>
+    </main>
 
+    <footer class="site-footer">
+      <img class="footerimage" src="assets/logo.jpg" alt="xavetech" />
 
-    </section>
-  </main>
-
-
-
-
-  
-  <footer class="site-footer">
-    
-      <img class="footerimage" src="assets/logo.jpg" alt="xavetech">
-   
       <div class="footerrow">
         <div class="footercol">
-  
-    <p>XAVETECH is committed to delivering absolute customer satisfactiion</p>
-<p>&copy; <span id="year"></span> XAVE TECH. All rights reserved.</p>
+          <p>
+            XAVETECH is committed to delivering absolute customer satisfactiion
+          </p>
+          <p>&copy; <span id="year"></span> XAVE TECH. All rights reserved.</p>
+        </div>
 
-    </div>
+        <div class="footercol">
+          <h3>
+            WE OFFER
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>WEB DEVELOPMENT</p>
+          <p>GRAPHIC DESIGN</p>
+          <p>SOCIAL-MEDIA MANAGMENT</p>
+        </div>
 
-   <div class="footercol">
-   <h3>WE OFFER <div class="underline"><span></span></div></h3>
-   <p> WEB DEVELOPMENT</p>
-   <p>GRAPHIC DESIGN</p>
-   <p>SOCIAL-MEDIA MANAGMENT</p>
-   </div>
+        <div class="footercol">
+          <h3>
+            CORE VALUES
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>EFFICIENCY</p>
+          <p>DILLIGENCE</p>
+          <p>TRUST-WORTHYNESS</p>
+          <a href="http://wa.me/+2347066979468"> BOOK A CALL</a>
+        </div>
 
-   <div class="footercol"> 
-    <h3>CORE VALUES <div class="underline"><span></span></div></h3>
-    <p>EFFICIENCY</p>
-     <p>DILLIGENCE</p>
-      <p>TRUST-WORTHYNESS</p>
-<a href="http://wa.me/+2347066979468"> BOOK A CALL</a>
-   </div>
+        <div class="socialsfooter">
+          <h3>SOCIALS</h3>
 
+          <a
+            href="http://www.instagram.com/xavetechsolutions?igsh=MXN1NnhtajduaHE0eA%3D%3D&utm_source=qr"
+            ><i
+              href="http://www.instagram.com/xavetechsolutions?igsh=MXN1NnhtajduaHE0eA%3D%3D&utm_source=qr"
+              class="fa-brands fa-instagram"
+            ></i
+          ></a>
+          <a href="https://x.com/xavetech1"
+            ><i href="http://x.com/xavetech1" class="fa-brands fa-x-twitter">
+            </i>
+          </a>
+          <a href="http://wa.me/+2347066979468">
+            <i href="http://wa.me/+2347066979468" class="fa-brands fa-whatsapp">
+            </i>
+          </a>
+          <a href="malito:Xavetechsolutions@gmail.com"
+            ><i
+              href="malito:Xavetechsolutions@gmail.com"
+              class="fa-solid fa-envelope"
+            >
+            </i>
+          </a>
+        </div>
 
-   <div class="socialsfooter"> 
- <h3>SOCIALS</h3>
- 
-   <a href="http://www.instagram.com/xavetechsolutions?igsh=MXN1NnhtajduaHE0eA%3D%3D&utm_source=qr"><i  href="http://www.instagram.com/xavetechsolutions?igsh=MXN1NnhtajduaHE0eA%3D%3D&utm_source=qr" class="fa-brands fa-instagram"></i></a>
-   <a href="https://x.com/xavetech1"><i  href="http://x.com/xavetech1"class="fa-brands fa-x-twitter"> </i> </a>
-    <a href="http://wa.me/+2347066979468"> <i  href="http://wa.me/+2347066979468"class="fa-brands fa-whatsapp"> </i> </a>
- <a href="malito:Xavetechsolutions@gmail.com" ><i   href="malito:Xavetechsolutions@gmail.com" class="fa-solid fa-envelope"> </i>  </a>
+        <div class="footercol">
+          <a href="privacy.html" class="muted">Privacy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
 
+      <hr />
+      <p class="lastlastfooter">
+        &copy; <span id="year"></span> XAVE TECH. All rights reserved.
+      </p>
+    </footer>
 
-   </div>
-
-
-   <div class="footercol">  
-       <a href="privacy.html" class="muted">Privacy</a>
-       <a href="contact.html">Contact</a>
-    </div>
-  </div>
-  
-<hr>
-<p class="lastlastfooter">&copy; <span id="year"></span> XAVE TECH. All rights reserved.</p>
-  </footer>
-
-  
-  <script src="script.js" defer></script>
-</body>
+    <script src="script.js" defer></script>
+  </body>
 </html>
