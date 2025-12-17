@@ -149,6 +149,42 @@
     return div;
   }
 
+  /* -------------------- LAUNCH COUNTDOWN -------------------- */
+  (function launchCountdown() {
+    const launchDate = new Date("2025-12-26T00:00:00").getTime();
+
+    const daysEl = document.getElementById("days");
+    const hoursEl = document.getElementById("hours");
+    const minutesEl = document.getElementById("minutes");
+    const secondsEl = document.getElementById("seconds");
+
+    if (!daysEl) return;
+
+    function updateCountdown() {
+      const now = Date.now();
+      const diff = launchDate - now;
+
+      if (diff <= 0) {
+        document.getElementById("countdown").innerHTML =
+          "<strong>🎉 We’re Live!</strong>";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      daysEl.textContent = days;
+      hoursEl.textContent = hours;
+      minutesEl.textContent = minutes;
+      secondsEl.textContent = seconds;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  })();
+
   /* -------------------- LOAD REVIEWS -------------------- */
   async function loadReviews() {
     const container = document.getElementById("reviewsContainer");

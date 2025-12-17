@@ -772,3 +772,133 @@ body::after {
     transform: rotate(360deg);
   }
 }
+
+.launch-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 204, 0, 0.08),
+    rgba(255, 204, 0, 0.02)
+  );
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.theme-dark .launch-section {
+  background: linear-gradient(
+    180deg,
+    rgba(212, 175, 55, 0.08),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+.launch-title {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin-bottom: 0.5rem;
+}
+
+.launch-tagline {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.countdown div {
+  background: var(--panel);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  min-width: 70px;
+  box-shadow: var(--shadow);
+}
+
+.countdown span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.countdown small {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.launch-date {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+/* SECTION HEADER */
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+.section-header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* PROJECT CARDS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--panel);
+  padding: 1.75rem;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ICON */
+.card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  color: #111;
+  font-size: 1.4rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.theme-dark .card-icon {
+  color: #0f0b08;
+}
